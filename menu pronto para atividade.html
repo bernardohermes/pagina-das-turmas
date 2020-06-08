@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>TURMAS</title>
+		<style>
+
+*{
+	margin:0;
+	padding:0;
+	color:rgb(160, 33, 97);
+	font-family:'Arial';
+	}
+	
+.menu{
+	width:100%;
+	height:50px;
+	background-color: #222;
+	}
+	
+.menu>ul{
+	list-style:none;	
+	position:relative;
+	margin-left:50px;
+	}
+.menu ul li{
+		width:150px;
+		float:left;
+	}
+
+.menu a{
+	padding:15px;
+	display:block;
+	text-decoration: none;
+	background-color: rgb(51, 220, 226);
+	text-align:center;
+	}
+.menu ul ul{
+	list-style:none;
+	position:absolute;
+	visibility:hidden;
+	
+	}
+.menu ul li:hover ul{
+	visibility:visible;
+	}
+	
+.menu a:hover{
+	background-color:#2d45cc;
+	}
+
+.menu ul ul li{
+	float:none;
+	border-bottom: solid 1px #ccc;
+	}
+.menu ul ul li a{
+	background-color:rgb(193, 235, 8);
+	}
+#bt_menu{
+	display: none;
+	}
+label[for='bt_menu']{
+	padding:5px;
+	background-color:rgb(145, 160, 57);
+	color:#fff;
+	font-family:'Arial';
+	text-align:center;
+	font-size:30px;
+	cursor:pointer;
+	display:none;
+	width:50px;
+	height:50px;
+	}	
+label[for='bt_menu']:hover{
+	background-color:#286d31;
+	color:#aaa;
+	}
+@media (max-width: 800px) {
+.menu{
+	margin-left:-100%;
+	transition:all .4s;
+	}
+label[for='bt_menu']{
+	display:block;
+	}
+.menu>ul{
+	margin-left:10;
+	}
+.menu{
+	margin-top:153px;
+	}
+.menu ul li{
+	width:100%;
+	float:none;
+	}
+.menu ul ul{
+	position:static;
+	overflow:hidden;
+	max-height:0;
+	transition:all .4s;
+	}
+.menu ul li:hover ul{
+	height:auto;
+	max-height:200px;
+	transition:all .4s;
+	}
+#bt_menu:checked ~ .menu{
+	margin-left:10;
+	}
+}
+
+
+
+	</style>
+    <body>
+
+		
+
+<input type="checkbox" id="bt_menu">
+<label for="bt_menu">&#9776;</label>
+
+<nav class="menu">
+	<ul>
+ <li><h3>
+     
+ </li></h1>   	 
+		  <li><a href="#">TURMA B1</a>
+			
+        	<ul>
+            	<li><a >     PAULA   0,5 </a>
+                    <li><a >  JUNIOR   5,0   </a>
+                        <li><a >    JULIA 2,0    </a>
+                            <li><a >        ALINE 3,0 </a>
+                                <li><a >      JULIANA 1,0 </a>
+                                    <li><a >    ICARO  2,0  </a>
+                                           
+                  </ul>
+        </li>
+        <li><a href="#">TURMA B2</a>
+        	<ul>
+            	<li><a >     KAKAROTO   8,0 </a>
+                    <li><a >  HERCULES   9,0   </a>
+                        <li><a >    RANGER AZUL 6,0    </a>
+                            <li><a >        PICOLLO 1,0 </a>
+                                <li><a >      KEN 3,0 </a>
+                                    <li><a >    JOANA  0,1  </a>
+										</li>
+										
+    		<body width="600" background="andre-benz-1136922-unsplash.jpg">
+
+        
+
+
+    </body>
+</html>
+
+
